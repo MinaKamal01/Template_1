@@ -22,7 +22,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    position: relative;
     transition: 0.5s;
     background-color: rgba(221, 221, 221, 0.384);
     position: fixed;
@@ -42,6 +41,7 @@ header .links {
     justify-content: flex-end;
     height: 1.95em;
     align-items: center;
+    position: relative;
 
 }
 
@@ -54,6 +54,7 @@ header ul {
     border-radius: 10px;
     border-top-right-radius: 0;
     position: absolute;
+    right: 0;
     top: 3em;
     padding-top: 0.5em;
     display: none;
