@@ -84,15 +84,17 @@ header ul li a {
     text-decoration: none;
     color: #333;
     padding: 0.75em;
-
+    transition: 0.3s;
 }
-
+header ul li a:hover {
+    padding-left: 1em;
+}
 header ul :not(:last-child) {
     border-bottom: #ddd solid 1px;
 }
 
 header .links .icon span {
-    background-color: #ddd;
+    background-color: #333;
     width: 100%;
     height: 0.05em;
     margin-bottom: 0.25em;
@@ -102,9 +104,9 @@ header .links .icon span {
 header .links .icon {
     margin-top: 0.25em;
     width: 1em;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    display: flex;
     align-items: flex-end;
 }
 
@@ -124,13 +126,14 @@ header .links:hover ul {
 
 .sec-1 {
     width: 100%;
-    height: calc(30em - 1.95em);
+    height: 100vh;
     background-image: url(../Imgs/background.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .sec-1 h3 {
